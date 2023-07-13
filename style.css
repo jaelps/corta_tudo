@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+}
+
+:root{
+    --sombra-principal-bot: rgb(43, 43, 114);
+    ---secundaria-bot: rgb(138, 138, 200);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 591px;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 408px;
+    height: 267px;
+    border: 1px solid black;
+    background-color: rgb(238, 238, 109);
+    box-shadow: 10px 12px 0px 0px black;
+}
+
+img{
+    width: 100px;
+}
+
+.card_texto{
+    display: flex;
+    flex-direction: column;
+}
+
+.card_botao{
+    position: relative;
+    display: inline-block;
+    margin: 20px 0 20px 60px;
+}
+
+.card_botao #botao{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;background-color: #FFA12B;
+    display: block;
+    position: relative;
+    padding: 2px 21px;
+
+    -webkit-tap-highlight-color: rgba(0 ,0 , 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: drop-shadow(color=#000, offx=0px, offy=1px);
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px var();
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, 0 10PX 0 #915100;
+    box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;;
+}
+
+#botao:active{
+    top: 10px;
+    background-color: #F78900;
+    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0, #915100;
+    -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+#botao:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    padding: 4%;
+    position: absolute;
+    bottom: -15px;
+    left: -4px;
+    z-index: -1;
+    background-color: #2B1800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5x;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #000;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > p{
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1440px){
+    body{
+        height: 617px;
+        background-image: url(/imagem/folha-1440.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    main{
+        height: 500px;
+        display: flex;
+        align-items: center;
+    }
+
+    .card{
+        width: 787px;
+        height: 340px;
+    }
+
+    figure > img{
+        width: 120px;
+    }
+
+    .card_botao{
+        margin: 20px 0 20px 130px;
+    }
+
+    input#link{
+        width: 390px;
+        height: 30px;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        height: 617px;
+        background-image: url(/imagem/folha-1024.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .card{
+        width: 550px;
+        height: 310px;
+    }
+
+    input#link{
+        width: 320px;
+        height: 31px;
+        margin-top: 10px;
+    }
+
+    .card_botao{
+        margin: 20px 0 20px 110px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        height: 530px;
+        background-image: url(/imagem/folha-768.png);
+        background-repeat: no-repeat;
+        background-size: 100% 96%;
+    }
+    
+    input#link{
+        width: 324px;
+        height: 25px;
+        margin-top: 10px;
+    }
+
+    .card_botao #botao{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    body{
+        height: 530px;
+        background-image: url(/imagem/folha-375.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .card{
+        width: 263px;
+        height: 282px;
+    }
+
+    input#link{
+        width: 212px;
+        height: 20px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .card_botao{
+        margin: 20px 0 20px 60px;
+    }
+
+    .card_botao #botao{
+        font-size: 16px;
+    }
+}
+
+
